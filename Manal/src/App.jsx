@@ -1,11 +1,15 @@
 import './App.css'
+import Header from './Components/Header/Header'
 
 function App() {
 
 
   return (
     <> 
-      <h1>Manal IT Services</h1>
+
+      <Header />
+      
+      {/* <h1>Manal IT Services</h1> */}
     </>
   )
 }
