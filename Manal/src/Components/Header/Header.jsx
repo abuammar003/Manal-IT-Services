@@ -8,7 +8,7 @@ import { RiGraduationCapFill } from "react-icons/ri";
 const Header = () => {
     const [showNav, setShowNav] = useState(false);
 
-    function toggleMenu() {
+    function toggleMenu() { 
       setShowNav((prev) => !prev);
       return;
     }
@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className="nav">
     <div className='nav_main'>
-        <h1> <RiGraduationCapFill className='hdrLogo'/> Manal <span> IT </span> </h1>
+        <h1 className='logo'> <RiGraduationCapFill className='hdrLogo'/> Manal <span> IT </span> </h1>
 
         <nav className={`nav_links ${showNav ? "show" : ""}`} onClick={() => {setShowNav(false)}}> 
             <ul>
