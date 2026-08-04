@@ -1,0 +1,15 @@
+import "./Home.css";
+import Hero from "../../Components/Hero/Hero";
+
+function Home() {
+  return (
+    <div className='home-main'>
+        
+        <Hero />
+
+
+    </div>
+  )
+}
+
+export default Home
