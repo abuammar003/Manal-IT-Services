@@ -1,0 +1,373 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#1e293b;
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:min(90%,1200px);
+    margin:auto;
+}
+
+
+/* ==========================================
+   SECTION SPACING
+========================================== */
+
+section{
+    padding:90px 0;
+}
+
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+}
+
+.section-header h2{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.section-header p{
+    font-size:1.05rem;
+    color:#64748b;
+}
+
+
+/* ==========================================
+   COMMON GRID
+========================================== */
+
+.courses-grid,
+.services-grid,
+.features-grid,
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.stats-grid,
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+
+/* ==========================================
+   COMMON CARD
+========================================== */
+
+.course-card,
+.service-card,
+.feature-card,
+.stat-card,
+.testimonial-card,
+.faq-col{
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+    transition:.35s ease;
+}
+
+.course-card:hover,
+.service-card:hover,
+.feature-card:hover,
+.stat-card:hover,
+.testimonial-card:hover,
+.faq-col:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(15,23,42,.12);
+}
+
+
+/* ==========================================
+   ICON STYLE
+========================================== */
+
+.course-icon,
+.service-icon,
+.feature-icon,
+.stat-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.8rem;
+    margin-bottom:20px;
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#fff;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary,
+.btn-primary-large,
+.btn-secondary,
+.btn-enroll{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:14px 30px;
+
+    border:none;
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary,
+.btn-primary-large,
+.btn-enroll{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+}
+
+.btn-secondary{
+
+    background:#fff;
+    color:#2563eb;
+
+    border:2px solid #2563eb;
+}
+
+.btn-primary:hover,
+.btn-primary-large:hover,
+.btn-enroll:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.30);
+}
+
+.btn-secondary:hover{
+
+    background:#2563eb;
+    color:#fff;
+}
+
+
+/* ==========================================
+   TEXT ALIGNMENT
+========================================== */
+
+.text-center{
+    text-align:center;
+    margin-top:50px;
+}
+
+
+/* ==========================================
+   COMMON TITLES
+========================================== */
+
+h1,h2,h3,h4{
+    color:#0f172a;
+}
+
+h3{
+    margin-bottom:12px;
+}
+
+
+/* ==========================================
+   PARAGRAPH
+========================================== */
+
+p{
+    color:#64748b;
+}
+
+
+/* ==========================================
+   LIGHT BACKGROUND SECTIONS
+========================================== */
+
+.stats-section,
+.features-section,
+.faq-section{
+
+    background:#f8fbff;
+}
+
+
+/* ==========================================
+   CTA SECTION
+========================================== */
+
+.cta-section{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    text-align:center;
+}
+
+.cta-section h2{
+
+    color:#fff;
+    font-size:2.6rem;
+    margin-bottom:20px;
+}
+
+.cta-section p{
+
+    color:#dbeafe;
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+     .courses-grid,
+    .services-grid,
+    .features-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.section-header h2{
+    font-size:2rem;
+}
+
+section{
+    padding:70px 0;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.container{
+    width:92%;
+}
+
+.section-header{
+    margin-bottom:40px;
+}
+
+.section-header h2{
+    font-size:1.8rem;
+}
+
+.course-card,
+.service-card,
+.feature-card,
+.stat-card,
+.testimonial-card,
+.faq-col{
+
+    padding:22px;
+}
+
+
+.courses-grid,
+    .services-grid,
+    .features-grid,
+    .stats-grid,
+    .testimonials-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media(max-width:576px){
+
+section{
+    padding:60px 0;
+}
+
+.section-header h2{
+    font-size:1.6rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-primary-large,
+.btn-enroll{
+
+    width:100%;
+}
+
+}

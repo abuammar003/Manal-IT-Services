@@ -1,0 +1,140 @@
+/* ==========================================
+   DESIGN SYSTEM VARIABLES
+========================================== */
+
+:root {
+
+  /* ========= Colors ========= */
+
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #dbeafe;
+
+  --secondary-color: #0f172a;
+
+  --accent-color: #38bdf8;
+
+  --white: #ffffff;
+
+  --body-bg: #ffffff;
+  --section-bg: #f8fbff;
+  --card-bg: #ffffff;
+
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --text-muted: #94a3b8;
+
+  --border-color: #e2e8f0;
+
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+
+
+  /* ========= Gradient ========= */
+
+  --primary-gradient: linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+  );
+
+  --hero-gradient: linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+  );
+
+  --light-gradient: linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fbff
+  );
+
+
+  /* ========= Shadows ========= */
+
+  --shadow-sm: 0 4px 12px rgba(15,23,42,.06);
+
+  --shadow-md: 0 10px 30px rgba(15,23,42,.08);
+
+  --shadow-lg: 0 20px 45px rgba(15,23,42,.12);
+
+  --shadow-hover: 0 30px 60px rgba(37,99,235,.18);
+
+
+  /* ========= Border Radius ========= */
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-round: 999px;
+
+
+  /* ========= Spacing ========= */
+
+  --section-padding: 90px;
+
+  --container-width: 1200px;
+
+  --gap-sm: 16px;
+  --gap-md: 24px;
+  --gap-lg: 32px;
+  --gap-xl: 48px;
+
+
+  /* ========= Typography ========= */
+
+  --font-family: "Poppins", sans-serif;
+
+  --fs-xs: .875rem;
+
+  --fs-sm: 1rem;
+
+  --fs-md: 1.1rem;
+
+  --fs-lg: 1.3rem;
+
+  --fs-xl: 2rem;
+
+  --fs-2xl: 2.6rem;
+
+  --fs-3xl: 3.5rem;
+
+
+  /* ========= Font Weight ========= */
+
+  --fw-regular: 400;
+
+  --fw-medium: 500;
+
+  --fw-semibold: 600;
+
+  --fw-bold: 700;
+
+  --fw-extra: 800;
+
+
+  /* ========= Animation ========= */
+
+  --transition-fast: .25s ease;
+
+  --transition: .35s ease;
+
+  --transition-slow: .5s ease;
+
+
+  /* ========= Navbar ========= */
+
+  --navbar-height: 80px;
+
+
+  /* ========= Z Index ========= */
+
+  --z-navbar: 999;
+
+  --z-dropdown: 1000;
+
+  --z-modal: 2000;
+}
