@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.page-content {
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   PAGE HERO
+========================================== */
+
+.about-page-header {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #eff6ff 0%,
+    #ffffff 55%,
+    #f8fbff 100%
+  );
+}
+
+.about-page-header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.about-page-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+
+  padding-bottom: 90px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.about-section:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================
+   REVERSE SECTION
+========================================== */
+
+.about-section.reverse {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.about-section.reverse .about-text {
+  order: 2;
+}
+
+.about-section.reverse .about-stats {
+  order: 1;
+}
+
+
+/* ==========================================
+   ABOUT TEXT
+========================================== */
+
+.about-text h2 {
+  position: relative;
+
+  display: inline-block;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 25px;
+}
+
+.about-text h2::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 45px;
+  height: 3px;
+
+  background: #2563eb;
+
+  border-radius: 20px;
+}
+
+.about-text p {
+  color: #64748b;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   ABOUT STATS
+========================================== */
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* ==========================================
+   STAT BOX
+========================================== */
+
+.stat-box {
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-7px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
+}
+
+.stat-box .stat-number {
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  color: #2563eb;
+
+  margin-bottom: 8px;
+}
+
+.stat-box .stat-label {
+  color: #64748b;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+}
+
+
+/* ==========================================
+   ABOUT LIST
+========================================== */
+
+.about-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin-top: 5px;
+}
+
+.about-list li {
+  position: relative;
+
+  padding: 15px 18px;
+
+  background: #f8fbff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  color: #475569;
+
+  font-size: 0.95rem;
+
+  transition: all 0.3s ease;
+}
+
+.about-list li:hover {
+  transform: translateX(5px);
+
+  background: #eff6ff;
+
+  border-color: #bfdbfe;
+
+  color: #1d4ed8;
+}
+
+
+/* ==========================================
+   MISSION / VISION SPECIAL STYLE
+========================================== */
+
+.about-section:nth-child(2) {
+  background: #f8fbff;
+
+  border-radius: 24px;
+
+  padding: 65px;
+
+  margin: 20px 0;
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.about-page .cta-section {
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #2563eb,
+    #3b82f6
+  );
+
+  text-align: center;
+
+  padding: 90px 20px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.about-page .cta-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  top: -100px;
+  left: -80px;
+}
+
+.about-page .cta-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  bottom: -150px;
+  right: -100px;
+}
+
+.about-page .cta-section .container {
+  position: relative;
+
+  z-index: 1;
+}
+
+.about-page .cta-section h2 {
+  color: #ffffff;
+
+  font-size: 2.4rem;
+
+  margin-bottom: 15px;
+}
+
+.about-page .cta-section p {
+  color: #dbeafe;
+
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+}
+
+
+/* ==========================================
+   CTA BUTTON
+========================================== */
+
+.about-page .btn-primary-large {
+  background: #ffffff;
+
+  color: #2563eb;
+
+  border: 2px solid #ffffff;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.about-page .btn-primary-large:hover {
+  background: transparent;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+  .about-page-header {
+    padding: 80px 0 55px;
+  }
+
+  .about-page-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-section,
+  .about-section.reverse {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-bottom: 70px;
+  }
+
+  .about-section.reverse .about-text,
+  .about-section.reverse .about-stats {
+    order: initial;
+  }
+
+  .about-section:nth-child(2) {
+    padding: 50px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .about-page-header {
+    padding: 70px 0 45px;
+  }
+
+  .about-page-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .about-page-header p {
+    font-size: 0.95rem;
+  }
+
+  .about-section,
+  .about-section.reverse {
+    padding: 55px 0;
+
+    gap: 35px;
+  }
+
+  .about-section:nth-child(2) {
+    padding: 35px 25px;
+
+    border-radius: 18px;
+  }
+
+  .about-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .stat-box {
+    min-height: 140px;
+
+    padding: 20px 15px;
+  }
+
+  .stat-box .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .about-list li {
+    font-size: 0.88rem;
+
+    padding: 13px 15px;
+  }
+
+  .about-page .cta-section {
+    padding: 65px 20px;
+  }
+
+  .about-page .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .about-page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box {
+    min-height: 120px;
+  }
+
+  .about-page .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+}
