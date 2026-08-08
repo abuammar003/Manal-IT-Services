@@ -2,12 +2,12 @@ export const COMPANY_INFO = {
   name: 'Manal IT',
   tagline: 'Learn. Build. Grow.',
   description: 'Professional IT training and education institute providing industry-relevant skills and career guidance.',
-  email: 'info@manalitservices.com',
-  phone: '+92-XXXX-XXXXXX',
-  address: 'Karachi, Pakistan',
-  year_founded: 2020,
-  studentCount: '5000+',
-  courseCount: '50+',
+  email: 'admin@manalit.com',
+  phone: '+91-XXXX-XXXXXX',
+  address: 'Apna Super Market, Old Agra Road, Malegaon - 423203',
+  // year_founded: 2020,
+  studentCount: '200+',
+  courseCount: '6+',
   instructorCount: '100+'
 }
 

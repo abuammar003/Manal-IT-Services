@@ -10,8 +10,8 @@ export default function Footer() {
     { icon: FaFacebook, url: 'https://facebook.com' },
     { icon: FaTwitter, url: 'https://twitter.com' },
     { icon: FaLinkedin, url: 'https://linkedin.com' },
-    { icon: FaInstagram, url: 'https://instagram.com' },
-    { icon: FaYoutube, url: 'https://youtube.com' }
+    // { icon: FaInstagram, url: 'https://instagram.com' },
+    // { icon: FaYoutube, url: 'https://youtube.com' }
   ]
 
   return (
@@ -26,10 +26,10 @@ export default function Footer() {
 
             <div className="social-links">
               {socialLinks.map((link, idx) => {
-                const Icon = link.icon
+                // const Icon = link.icon
                 return (
                   <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" className="social-link-footer">
-                    <Icon />
+                    <link.icon />
                   </a>
                 )
               })}
@@ -64,7 +64,7 @@ export default function Footer() {
             <p>📧 Email: {COMPANY_INFO.email}</p>
             <p>📱 Phone: {COMPANY_INFO.phone}</p>
             <p>📍 Address: {COMPANY_INFO.address}</p>
-            <p>🏢 Founded: {COMPANY_INFO.year_founded}</p>
+            {/* <p>🏢 Founded: {COMPANY_INFO.year_founded}</p> */}
           </div>
 
         </div>
