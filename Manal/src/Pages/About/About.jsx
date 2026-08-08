@@ -1,21 +1,24 @@
 import { COMPANY_INFO, STATS } from '../../config/constants';
-import { FaAward, FaUsers, FaBook, FaChartLine } from 'react-icons/fa'
+import { FaAward, FaUsers, FaBook, FaChartLine } from 'react-icons/fa';
+import "./About.css";
+import { Link } from 'react-router-dom';
 
 export default function About() {
-  const achievements = [
-    { icon: FaUsers, number: '5000+', label: 'Students Trained' },
-    { icon: FaBook, number: '50+', label: 'Courses Offered' },
-    { icon: FaChartLine, number: '95%', label: 'Job Placement' },
-    { icon: FaAward, number: '4.9/5', label: 'Average Rating' }
-  ]
+  // const achievements = [
+  //   { icon: FaUsers, number: '5000+', label: 'Students Trained' },
+  //   { icon: FaBook, number: '50+', label: 'Courses Offered' },
+  //   { icon: FaChartLine, number: '95%', label: 'Job Placement' },
+  //   { icon: FaAward, number: '4.9/5', label: 'Average Rating' }
+  // ]
 
   return (
     <main className="about-page">
-      <section className="page-header">
-        <div className="container">
+
+      <section className="about-page-header">
+        {/* <div className="container"> */}
           <h1>About Manal IT</h1>
           <p>Empowering the next generation of tech professionals</p>
-        </div>
+        {/* </div> */}
       </section>
 
       <section className="page-content">
@@ -100,7 +103,9 @@ export default function About() {
         <div className="container">
           <h2>Ready to Start Your Learning Journey?</h2>
           <p>Join thousands of students who have transformed their careers with {COMPANY_INFO.name}</p>
-          <button className="btn-primary-large">Explore Our Courses</button>
+          <Link to="/courses">
+            <button className="btn-primary-large">Explore Our Courses</button>
+          </Link>
         </div>
       </section>
     </main>

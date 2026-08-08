@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
-import { COURSES, SERVICES, FEATURES, TESTIMONIALS, STATS, COMPANY_INFO} from '../../config/constants'
+import { COURSES, SERVICES, FEATURES, TESTIMONIALS, COMPANY_INFO} from '../../config/constants'
 import CourseCard from '../../components/CourseCard/CourseCard'
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard'
-import StatsSection from '../../components/StatesSection/StatsSection'
+// import StatsSection from '../../components/StatesSection/StatsSection'
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'
-import Hero from '../../components/Hero/Hero'
+import Hero from '../../components/Hero/Hero';
+import "./Home.css";
+
 
 export default function Home() {
   return (
@@ -95,7 +97,9 @@ export default function Home() {
         <div className="container">
           <h2>Ready to Transform Your Career?</h2>
           <p>Join {COMPANY_INFO.studentCount} students who have already started their journey with {COMPANY_INFO.name}.</p>
-          <Link to="/contact" className="btn-primary-large">Enroll Today</Link>
+          <Link to="/contact">
+            <button className='btn-primary-large'>Enroll Today </button>
+          </Link>
         </div>
       </section>
 

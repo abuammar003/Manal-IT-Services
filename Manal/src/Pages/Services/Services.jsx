@@ -1,5 +1,6 @@
 import { SERVICES } from '../../config/constants'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   const serviceIcons = {
@@ -32,8 +33,8 @@ export default function Services() {
                 <ul className="service-features-list">
                   {service.features.map((feature, idx) => (
                     <li key={idx}>
-                      <FaArrowRight className="feature-icon" />
-                      {feature}
+                      {/* <FaArrowRight className="feature-icon" /> */}
+                       ✓ {feature}
                     </li>
                   ))}
                 </ul>
@@ -49,7 +50,9 @@ export default function Services() {
         <div className="container">
           <h2>Ready to Get Started?</h2>
           <p>Choose a service that matches your learning goals and start your journey today.</p>
-          <button className="btn-primary-large">Contact Us</button>
+          <Link to='/contact'>
+            <button className="btn-primary-large">Contact Us</button>
+          </Link>
         </div>
       </section>
     </main>
