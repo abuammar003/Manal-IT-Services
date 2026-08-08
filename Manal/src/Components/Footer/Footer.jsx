@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa'
-import { COMPANY_INFO } from '../../config/constants'
+import { COMPANY_INFO } from '../../config/constants';
+import "./Footer.css";
 
-export default function Footer() {
+export default function Footer() { 
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
@@ -15,11 +16,14 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-grid">
-          <div className="footer-col">
+
+      <div className="footer-container">
+
+        <div className="footer-content">
+          <div className="footer-company">
             <h3>{COMPANY_INFO.name}</h3>
             <p>{COMPANY_INFO.description}</p>
+
             <div className="social-links">
               {socialLinks.map((link, idx) => {
                 const Icon = link.icon
@@ -32,6 +36,7 @@ export default function Footer() {
             </div>
           </div>
 
+              {/* Quick Links */}
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul>
@@ -42,6 +47,7 @@ export default function Footer() {
             </ul>
           </div>
 
+              {/* Courses */}
           <div className="footer-col">
             <h4>Courses</h4>
             <ul>
@@ -52,6 +58,7 @@ export default function Footer() {
             </ul>
           </div>
 
+              {/* Contact Info */}
           <div className="footer-col">
             <h4>Contact Info</h4>
             <p>📧 Email: {COMPANY_INFO.email}</p>
@@ -59,13 +66,16 @@ export default function Footer() {
             <p>📍 Address: {COMPANY_INFO.address}</p>
             <p>🏢 Founded: {COMPANY_INFO.year_founded}</p>
           </div>
+
         </div>
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} {COMPANY_INFO.name}. All rights reserved.</p>
           <p>Empowering students and professionals to build successful careers in technology.</p>
         </div>
+
       </div>
+
     </footer>
   )
 }
