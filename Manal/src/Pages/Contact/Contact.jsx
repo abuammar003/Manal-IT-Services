@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
-import { COMPANY_INFO } from '../../config/constants'
+import { COMPANY_INFO } from '../../config/constants';
+import "./Contact.css";
 
 export default function Contact() {
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,7 +30,8 @@ export default function Contact() {
 
   return (
     <main className="contact-page">
-      <section className="page-header">
+
+      <section className="contact-header">
         <div className="container">
           <h1>Contact Us</h1>
           <p>Get in touch with our team. We're here to help!</p>
@@ -38,7 +41,7 @@ export default function Contact() {
       <section className="page-content">
         <div className="container">
           <div className="contact-wrapper">
-            <div className="contact-info-section">
+            <div className="contact-info">
               <h2>Get in Touch</h2>
               <p>Have questions? Our friendly team would love to hear from you. Send us a message and we'll respond as soon as possible.</p>
 
@@ -71,7 +74,7 @@ export default function Contact() {
                   <FaClock className="contact-icon" />
                   <div>
                     <h4>Business Hours</h4>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br/>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Saturday - Thursday: 10:00 AM - 8:00 PM<br/>Friday: Weekly Off</p>
                   </div>
                 </div>
               </div>
@@ -115,7 +118,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+92-XXXX-XXXXXX"
+                    placeholder="+91-XXXX-XXXXXX"
                   />
                 </div>
               </div>
@@ -152,29 +155,6 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="faq-section">
-        <div className="container">
-          <h2>Frequently Asked Questions</h2>
-          <div className="faq-grid">
-            <div className="faq-item">
-              <h3>How long does it take to receive a response?</h3>
-              <p>We typically respond to all inquiries within 24 business hours. For urgent matters, please call us directly.</p>
-            </div>
-            <div className="faq-item">
-              <h3>Can I schedule a free consultation?</h3>
-              <p>Yes! We offer free 30-minute consultations. Fill out the contact form and mention this in your message.</p>
-            </div>
-            <div className="faq-item">
-              <h3>What courses are available?</h3>
-              <p>We offer 50+ courses covering web development, mobile apps, data science, and more. Visit our Courses page to explore.</p>
-            </div>
-            <div className="faq-item">
-              <h3>Do you offer corporate training?</h3>
-              <p>Yes! We provide customized training programs for corporate teams. Contact us to discuss your requirements.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }
