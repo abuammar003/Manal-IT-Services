@@ -7,10 +7,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FaFacebook, url: 'https://facebook.com' },
-    { icon: FaTwitter, url: 'https://twitter.com' },
-    { icon: FaLinkedin, url: 'https://linkedin.com' },
-    // { icon: FaInstagram, url: 'https://instagram.com' },
+    { icon: FaLinkedin, url: 'https://www.linkedin.com/company/manal-it-services/' },
+    { icon: FaInstagram, url: 'https://www.instagram.com/manalitservices/' },
+
+    // { icon: FaFacebook, url: 'https://facebook.com' },
+    // { icon: FaTwitter, url: 'https://twitter.com' },
     // { icon: FaYoutube, url: 'https://youtube.com' }
   ]
 

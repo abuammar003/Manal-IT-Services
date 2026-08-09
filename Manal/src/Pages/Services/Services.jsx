@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <main className="services-page">
 
-      <section className="page-header">
+      <section className="page-header"> 
         <div className="container">
           <h1>Our Services</h1>
           <p>Comprehensive support to ensure your learning success</p>

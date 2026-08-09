@@ -286,10 +286,19 @@
 ========================================== */
 
 .home .cta-section {
+  width: 100%;
+  padding: 40px 0px;
+
+}
+
+
+.home .cta-section .container {
+  width: 90%;
+  height: 90%;
   position: relative;
-
-  padding: 100px 20px;
-
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 30px;
   text-align: center;
 
   background: linear-gradient(
@@ -300,13 +309,7 @@
   );
 
   overflow: hidden;
-}
-
-
-.home .cta-section .container {
-  position: relative;
-
-  z-index: 1;
+  z-index: 1; 
 }
 
 .home .cta-section h2 {
@@ -380,18 +383,12 @@
 
 .home .btn-primary-large {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   padding: 14px 32px;
-
   border: 2px solid #ffffff;
-
   border-radius: 50px;
-
   background: #ffffff;
-
   color: #2563eb;
 
   font-size: 0.95rem;
@@ -446,7 +443,7 @@
   }
 
   .home .cta-section {
-    padding: 80px 20px;
+    padding: 40px 0px;
   }
 
   .home .cta-section h2 {
@@ -494,7 +491,7 @@
   }
 
   .home .cta-section {
-    padding: 70px 20px;
+    padding: 30px 0px;
   }
 
   .home .cta-section h2 {

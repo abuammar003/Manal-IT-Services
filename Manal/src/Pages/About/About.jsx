@@ -14,7 +14,7 @@ export default function About() {
   return (
     <main className="about-page">
 
-      <section className="about-page-header">
+      <section className="about-page-header"> 
         {/* <div className="container"> */}
           <h1>About Manal IT</h1>
           <p>Empowering the next generation of tech professionals</p>

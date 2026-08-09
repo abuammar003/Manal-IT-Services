@@ -103,6 +103,8 @@
 
 
 
+
+
 /* ==========================================
    CARD TOP BORDER
 ========================================== */
@@ -206,10 +208,17 @@
 ========================================== */
 
 .courses-page .cta-section {
+    width: 100%;
+  padding: 40px 0px;
+}
+
+.courses-page .cta-section .container {
+  width: 90%;
+  height: 90%;
   position: relative;
-
-  padding: 90px 20px;
-
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 30px;
   text-align: center;
 
   background: linear-gradient(
@@ -220,44 +229,7 @@
   );
 
   overflow: hidden;
-}
-/* 
-.courses-page .cta-section::before {
-  content: "";
-
-  position: absolute;
-
-  width: 280px;
-  height: 280px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.07);
-
-  top: -130px;
-  left: -100px;
-}
-
-.courses-page .cta-section::after {
-  content: "";
-
-  position: absolute;
-
-  width: 350px;
-  height: 350px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.06);
-
-  right: -150px;
-  bottom: -200px;
-} */
-
-.courses-page .cta-section .container {
-  position: relative;
-
-  z-index: 1;
+  z-index: 1; 
 }
 
 .courses-page .cta-section h2 {
@@ -381,7 +353,7 @@
   }
 
   .courses-page .cta-section {
-    padding: 65px 20px;
+    padding: 30px 0px;
   }
 
   .courses-page .cta-section h2 {

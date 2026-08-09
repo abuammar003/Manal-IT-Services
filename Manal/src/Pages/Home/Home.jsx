@@ -48,7 +48,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header"> 
             <h2>Our Services</h2>
             <p>Comprehensive support to ensure your learning success</p>
           </div>

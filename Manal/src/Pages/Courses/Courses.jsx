@@ -1,7 +1,7 @@
 import { COURSES } from '../../config/constants'
 import CourseCard from '../../components/CourseCard/CourseCard';
 import { Link } from 'react-router-dom';
-import "./Courses.css";
+import "./Courses.css"; 
 
 export default function Courses() {
   // const categories = ['All', 'Web Development', 'Frontend', 'Backend', 'Full Stack', 'Data Science', 'Mobile']
@@ -27,10 +27,12 @@ export default function Courses() {
           </div> */}
 
           <div className="courses-grid">
+
             {COURSES.map((course) => (
               <CourseCard key={course.id} course={course} />
+              
             ))}
-          </div>
+          </div> 
         </div>
       </section>
 

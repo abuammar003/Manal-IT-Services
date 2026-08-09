@@ -53,7 +53,7 @@
   gap: 70px;
   align-items: center;
 
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
 
   border-bottom: 1px solid #e2e8f0;
 }
@@ -258,6 +258,19 @@
 ========================================== */
 
 .about-page .cta-section {
+ width: 100%;
+  padding: 40px 0px;
+}
+
+.cta-section .container {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 30px;
+  text-align: center;
+
   background: linear-gradient(
     135deg,
     #1d4ed8,
@@ -265,52 +278,10 @@
     #3b82f6
   );
 
-  text-align: center;
-
-  padding: 90px 20px;
-
-  position: relative;
-
   overflow: hidden;
+  z-index: 1; 
 }
 
-.about-page .cta-section::before {
-  content: "";
-
-  position: absolute;
-
-  width: 250px;
-  height: 250px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.08);
-
-  top: -100px;
-  left: -80px;
-}
-
-.about-page .cta-section::after {
-  content: "";
-
-  position: absolute;
-
-  width: 300px;
-  height: 300px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.06);
-
-  bottom: -150px;
-  right: -100px;
-}
-
-.about-page .cta-section .container {
-  position: relative;
-
-  z-index: 1;
-}
 
 .about-page .cta-section h2 {
   color: #ffffff;
@@ -382,7 +353,7 @@
 
     gap: 45px;
 
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
   }
 
   .about-section.reverse .about-text,
@@ -417,7 +388,7 @@
 
   .about-section,
   .about-section.reverse {
-    padding: 55px 0;
+    padding: 55px 0 0 0;
 
     gap: 35px;
   }
@@ -459,7 +430,7 @@
   }
 
   .about-page .cta-section {
-    padding: 65px 20px;
+    padding: 30px 0px;
   }
 
   .about-page .cta-section h2 {
