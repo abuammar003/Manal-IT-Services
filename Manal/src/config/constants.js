@@ -1,15 +1,20 @@
+import { TbWorld } from "react-icons/tb";
+
+
+
 export const COMPANY_INFO = {
   name: 'Manal IT',
   tagline: 'Learn. Build. Grow.',
   description: 'Professional IT training and education institute providing industry-relevant skills and career guidance.',
   email: 'admin@manalit.com',
-  phone: '+91-XXXX-XXXXXX',
-  address: 'Apna Super Market, Old Agra Road, Malegaon - 423203',
+  phone: '+91-7066-178278',
+  address: 'Apna Super Market, Old Agra Road, Malegaon - 423203, Dist - Nashik',
   // year_founded: 2020,
   studentCount: '200+',
   courseCount: '6+',
   instructorCount: '100+'
 }
+
 
 export const COURSES = [
   {
@@ -21,7 +26,8 @@ export const COURSES = [
     duration: '8 weeks',
     price: '9,999',
     icon: '🌐',
-    highlights: ['Responsive Design', 'JavaScript Basics', 'DOM Manipulation', 'Project Based Learning']
+    // icon: TbWorld ,
+    highlights: ['HTML', 'CSS (Cascading Stylesheet)', 'BootStrap', 'JavaScript ES6', 'React.js', 'Responsive Design', 'Project Based Learning']
   },
   {
     id: 2,
@@ -58,9 +64,9 @@ export const COURSES = [
   },
   {
     id: 5,
-    title: 'Python for Data Science',
-    category: 'Data Science',
-    description: 'Learn Python, data analysis, visualization, and machine learning fundamentals',
+    title: 'Dimploma in DevOps Basics',
+    category: 'DevOps',
+    description: 'DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity. ',
     level: 'Beginner',
     duration: '12 weeks',
     price: '16,999',
@@ -77,7 +83,41 @@ export const COURSES = [
     price: '19,999',
     icon: '📱',
     highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
-  }
+  },
+  {
+    id: 7,
+    title: 'Diploma in Graphic & Animation Designing',
+    category: 'Graphic & Animation',
+    description: 'Graphic designers explain a concept through visuals, and motion graphics designers',
+    level: 'Intermediate',
+    duration: '14 weeks',
+    price: '19,999',
+    icon: '📱',
+    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+  },
+  {
+    id: 8,
+    title: 'Wordpress & Drupal Certification',
+    category: 'Web Development',
+    description: 'Content Management System generally refers to an web-based application that enables multiple users with different.',
+    level: 'Intermediate',
+    duration: '14 weeks',
+    price: '19,999',
+    icon: '📱',
+    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+  },
+  {
+    id: 9,
+    title: 'Courses Available on Demand',
+    category: 'Others',
+    description: 'Graphic designers explain a concept through visuals, and motion graphics designers',
+    level: 'Intermediate',
+    duration: '14 weeks',
+    price: '19,999',
+    icon: '📱',
+    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+  },
+
 ]
 
 export const SERVICES = [
