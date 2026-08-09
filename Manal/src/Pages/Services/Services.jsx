@@ -1,19 +1,14 @@
 import { SERVICES } from '../../config/constants'
-import { FaArrowRight } from 'react-icons/fa';
+// import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import "./Services.css";
 
 export default function Services() {
-  const serviceIcons = {
-    '👥': 'Users',
-    '🎥': 'Video',
-    '👨‍🏫': 'UserTie',
-    '🛠️': 'Wrench',
-    '🌟': 'Star',
-    '💼': 'Briefcase'
-  }
+
 
   return (
     <main className="services-page">
+
       <section className="page-header">
         <div className="container">
           <h1>Our Services</h1>
@@ -23,6 +18,7 @@ export default function Services() {
 
       <section className="page-content">
         <div className="container">
+
           <div className="services-grid">
             {SERVICES.map((service) => (
               <div key={service.id} className="service-card-large">

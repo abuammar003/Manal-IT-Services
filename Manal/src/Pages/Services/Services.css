@@ -3,3 +3,532 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* ==========================================
+   SERVICES PAGE
+========================================== */
+
+.services-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.services-page .container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.services-page .page-header {
+  position: relative;
+
+  padding: 100px 0px 60px;
+
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #eff6ff 0%,
+    #ffffff 50%,
+    #f8fbff 100%
+  );
+
+  overflow: hidden;
+}
+
+.services-page .page-header .container {
+  position: relative;
+
+  z-index: 1;
+}
+
+.services-page .page-header h1 {
+  margin-bottom: 15px;
+
+  color: #0f172a;
+
+  font-size: 3.2rem;
+
+  font-weight: 800;
+}
+
+.services-page .page-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #64748b;
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   PAGE CONTENT
+========================================== */
+
+.services-page .page-content {
+  padding: 90px 0;
+}
+
+
+/* ==========================================
+   SERVICES GRID
+========================================== */
+
+.services-page .services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.services-page .service-card-large {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 32px;
+
+  min-height: 420px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.services-page .service-card-large:hover {
+  transform: translateY(-8px);
+
+  border-color: #bfdbfe;
+
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ==========================================
+   CARD TOP BORDER
+========================================== */
+
+.services-page .service-card-large::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 30px;
+  right: 30px;
+
+  height: 3px;
+
+  background: #2563eb;
+  /* background: yellowgreen !important; */
+
+  border-radius: 0 0 10px 10px;
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition: transform 0.3s ease;
+}
+
+.services-page .service-card-large:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* ==========================================
+   SERVICE ICON
+========================================== */
+
+.services-page .service-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 16px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 1.8rem;
+
+  transition: all 0.3s ease;
+}
+
+.services-page .service-card-large:hover .service-icon {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+
+/* ==========================================
+   SERVICE TITLE
+========================================== */
+
+.services-page .service-card-large h3 {
+  margin-bottom: 13px;
+
+  color: #0f172a;
+
+  font-size: 1.3rem;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   SERVICE DESCRIPTION
+========================================== */
+
+.services-page .service-description {
+  margin-bottom: 22px;
+
+  color: #64748b;
+
+  font-size: 0.93rem;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   SERVICE FEATURES
+========================================== */
+
+.services-page .service-features-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  margin-bottom: 25px;
+}
+
+.services-page .service-features-list li {
+  position: relative;
+
+  padding-left: 22px;
+
+  color: #475569;
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+}
+
+.services-page .service-features-list li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  color: #2563eb;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   CARD BUTTON
+========================================== */
+
+.services-page .service-card-large .btn-secondary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  margin-top: auto;
+
+  padding: 10px 22px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 50px;
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.services-page .service-card-large .btn-secondary:hover {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+
+/* ==========================================
+   CTA SECTION
+========================================== */
+
+.services-page .cta-section {
+  position: relative;
+
+  padding: 100px 20px;
+
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #2563eb,
+    #3b82f6
+  );
+
+  overflow: hidden;
+}
+
+.services-page .cta-section .container {
+  position: relative;
+
+  z-index: 1;
+}
+
+.services-page .cta-section h2 {
+  margin-bottom: 15px;
+
+  color: #ffffff;
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+}
+
+.services-page .cta-section p {
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+
+  color: #dbeafe;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   CTA BUTTON
+========================================== */
+
+.services-page .btn-primary-large {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 32px;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50px;
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.services-page .btn-primary-large:hover {
+  background: transparent;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+  .services-page .page-header {
+    padding: 95px 0 55px;
+  }
+
+  .services-page .page-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .services-page .page-content {
+    padding: 70px 0;
+  }
+
+  .services-page .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+  .services-page .service-card-large {
+    min-height: 400px;
+
+    padding: 28px;
+  }
+
+  .services-page .cta-section {
+    padding: 80px 20px;
+  }
+
+  .services-page .cta-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .services-page .page-header {
+    padding: 90px 0 50px;
+  }
+
+  .services-page .page-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .services-page .page-header p {
+    font-size: 0.95rem;
+  }
+
+  .services-page .page-content {
+    padding: 60px 0;
+  }
+
+  .services-page .services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .services-page .service-card-large {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .services-page .cta-section {
+    padding: 70px 20px;
+  }
+
+  .services-page .cta-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .services-page .cta-section p {
+    font-size: 0.92rem;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .services-page .container {
+    width: 92%;
+  }
+
+  .services-page .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-page .page-header p {
+    font-size: 0.9rem;
+  }
+
+  .services-page .service-card-large {
+    padding: 22px;
+  }
+
+  .services-page .service-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.5rem;
+  }
+
+  .services-page .service-card-large h3 {
+    font-size: 1.15rem;
+  }
+
+  .services-page .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-page .btn-primary-large {
+    width: 100%;
+  }
+}
