@@ -1,5 +1,6 @@
 import "./Hero.css";
-import heroImage from "../../assets/hero-image.png"; // Import your hero image
+// import heroImage from "../../assets/hero-image.png"; // Import your hero image
+import heroImage from "../../assets/manalIT-Hero-Image.webp"; // Import your hero image
 import { IoIosStarOutline } from "react-icons/io";
 
 
