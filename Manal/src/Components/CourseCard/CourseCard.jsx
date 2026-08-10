@@ -2,12 +2,16 @@ import {Link} from "react-router-dom";
 
 
 export default function CourseCard({ course }) {
+  // const Icon = course.icon
+  // console.log(course.icon)
+
+  console.log("Hello World")
   return (
     <div className="course-card">
-      <div className="course-icon">{course.icon}</div>
+      <div className="course-icon">  <course.icon /> </div> 
       <h3>{course.title}</h3>
       {/* <p className="course-category">{course.category}</p> */}
-      <p className="course-description">{course.description}</p>
+      <p className="course-description">{course.description}</p> 
       
       {/* <div className="course-meta">
         <span className="level">{course.level}</span>
