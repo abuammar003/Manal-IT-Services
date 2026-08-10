@@ -7,6 +7,7 @@ import Services from './pages/Services/Services';
 import Courses from './pages/Courses/Courses';
 import Contact from "./pages/Contact/Contact";
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
     <>  
 
     <BrowserRouter>
+    
+        <ScrollToTop />
+
         <Header />
      
       <Routes>
