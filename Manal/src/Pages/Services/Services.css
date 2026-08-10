@@ -13,7 +13,7 @@
   min-height: 100vh;
   background: #ffffff;
 }
-
+ 
 .services-page .container {
   width: min(90%, 1200px);
   margin: 0 auto;
@@ -168,7 +168,7 @@
    SERVICE ICON
 ========================================== */
 
-.services-page .service-icon {
+/* .services-page .service-icon {
   width: 65px;
   height: 65px;
 
@@ -196,7 +196,7 @@
   color: #ffffff;
 
   transform: scale(1.05);
-}
+} */
 
 
 /* ==========================================
