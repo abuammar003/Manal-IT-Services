@@ -4,7 +4,7 @@ export default function TestimonialCard({ testimonial }) {
   
   return (
     <div className="testimonial-card">
-
+ 
       <div className="testimonial-header">
         <div className="avatar">{testimonial.avatar}</div>
         <div className="testimonial-info">
