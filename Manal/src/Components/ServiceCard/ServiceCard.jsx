@@ -1,9 +1,12 @@
-export default function ServiceCard({ title, description, icon }) {
+export default function ServiceCard({ service}) {
+  const Icon = service.icon
+
   return (
     <div className="service-card">
-      {icon && <div className="service-icon">{icon}</div>}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      {service.icon && <div className="service-icon"><Icon /></div>}
+      <h3>{service.title}</h3>
+      <p>{service.description}</p>
     </div>
   )
 }
+ 
