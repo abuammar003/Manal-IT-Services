@@ -1,4 +1,5 @@
 import { TbWorld } from "react-icons/tb";
+import { FaReact } from "react-icons/fa6";
 
 
 
@@ -12,7 +13,7 @@ export const COMPANY_INFO = {
   // year_founded: 2020,
   studentCount: '200+',
   courseCount: '6+',
-  instructorCount: '100+'
+  instructorCount: '100+' 
 }
 
 
@@ -25,8 +26,8 @@ export const COURSES = [
     level: 'Beginner',
     duration: '8 weeks',
     price: '9,999',
-    icon: '🌐',
-    // icon: TbWorld ,
+    // icon: '🌐',
+    icon: TbWorld,
     highlights: ['HTML', 'CSS (Cascading Stylesheet)', 'BootStrap', 'JavaScript ES6', 'React.js', 'Responsive Design', 'Project Based Learning']
   },
   {
@@ -37,7 +38,8 @@ export const COURSES = [
     level: 'Intermediate',
     duration: '10 weeks',
     price: '14,999',
-    icon: '⚛️',
+    // icon: '⚛️',
+    icon: FaReact,
     highlights: ['Hooks & Context', 'Component Patterns', 'Performance Optimization', 'Real Projects']
   },
   {
