@@ -7,13 +7,13 @@ export default function Courses() {
   // const categories = ['All', 'Web Development', 'Frontend', 'Backend', 'Full Stack', 'Data Science', 'Mobile']
 
   return (
-    <main className="courses-page">
+    <main className="courses-page"> 
 
       <section className="page-hero">
         <div className="container">
           <h1>Our Courses</h1>
           <p>Comprehensive training programs designed by industry experts</p>
-        </div>
+        </div> 
       </section>
 
       <section className="page-content">

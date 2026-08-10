@@ -33,7 +33,7 @@
     #f8fbff 100%
   );
 
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 
@@ -104,7 +104,6 @@
 
 
 
-
 /* ==========================================
    CARD TOP BORDER
 ========================================== */
@@ -139,6 +138,44 @@
 
 
 /* ==========================================
+   CARD ICON
+========================================== */
+
+
+/* .courses-page .service-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 16px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 1.8rem;
+
+  transition: all 0.3s ease;
+}
+
+.courses-page .service-card-large:hover .service-icon {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+} */
+
+
+
+
+/* ==========================================
    COURSE CARD FOOTER
 ========================================== */
 
@@ -146,61 +183,6 @@
   margin-top: auto;
 }
 
-
-/* ==========================================
-   FILTERS
-   (Ready for future use)
-========================================== */
-
-.courses-page .filters {
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  gap: 12px;
-
-  margin-bottom: 50px;
-}
-
-.courses-page .filter-btn {
-  padding: 10px 22px;
-
-  border: 1px solid #dbe3ef;
-
-  border-radius: 50px;
-
-  background: #ffffff;
-
-  color: #475569;
-
-  font-size: 0.9rem;
-
-  font-weight: 500;
-
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-}
-
-.courses-page .filter-btn:hover {
-  background: #eff6ff;
-
-  border-color: #93c5fd;
-
-  color: #2563eb;
-}
-
-.courses-page .filter-btn.active {
-  background: #2563eb;
-
-  border-color: #2563eb;
-
-  color: #ffffff;
-}
 
 
 /* ==========================================
