@@ -167,10 +167,19 @@
 ========================================== */
 
 .footer-col p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #94a3b8;
   font-size: 0.9rem;
   line-height: 1.7;
   margin-bottom: 12px;
+}
+.footer-col p .icon {
+  font-size: 1rem;
+}
+.footer-col p  .location-icon {
+  font-size: 1.3rem;
 }
 
 .footer-col p:last-child {

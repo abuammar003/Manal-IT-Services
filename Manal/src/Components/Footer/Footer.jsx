@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt , FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa';
 import { RiGraduationCapFill } from "react-icons/ri"; 
 import { COMPANY_INFO } from '../../config/constants';
 import "./Footer.css";
@@ -10,17 +10,16 @@ export default function Footer() {
   const socialLinks = [
     { icon: FaLinkedin, url: 'https://www.linkedin.com/company/manal-it-services/' },
     { icon: FaInstagram, url: 'https://www.instagram.com/manalitservices/' },
-
+    { icon: FaTwitter, url: 'https://x.com/manalitservices' },
     // { icon: FaFacebook, url: 'https://facebook.com' },
-    // { icon: FaTwitter, url: 'https://twitter.com' },
     // { icon: FaYoutube, url: 'https://youtube.com' }
-  ]
- 
+  ];
+
   return (
     <footer className="footer">
 
       <div className="footer-container">
-
+ 
         <div className="footer-content">
           <div className="footer-company">
             <h1 className='logo'> <RiGraduationCapFill className='ftrLogo'/> Manal <span> IT </span> </h1>
@@ -46,6 +45,7 @@ export default function Footer() {
               <li><Link to="/courses">Courses</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to='/contact'>Contact</Link></li>
             </ul>
           </div>
 
@@ -54,18 +54,22 @@ export default function Footer() {
             <h4>Courses</h4>
             <ul>
               <li><Link to="/courses">Web Development</Link></li>
-              <li><Link to="/courses">Mobile Apps</Link></li>
-              <li><Link to="/courses">Data Science</Link></li>
-              <li><Link to="/courses">Full Stack</Link></li>
+              <li><Link to="/courses">React.js Mastery</Link></li>
+              <li><Link to="/courses">Node.js & Express.js</Link></li>
+              <li><Link to="/courses">Full Stack Development</Link></li>
+              <li><Link to="/courses">Dimploma in DevOps Basics</Link></li>
+              <li><Link to="/courses">Graphic & Animation</Link></li>
+              <li><Link to="/courses">Wordpress & Drupal</Link></li>
+              <li><Link to="/courses">Other Courses</Link></li>
             </ul>
           </div>
 
               {/* Contact Info */}
           <div className="footer-col">
             <h4>Contact Info</h4>
-            <p>📧 Email: {COMPANY_INFO.email}</p>
-            <p>📱 Phone: {COMPANY_INFO.phone}</p>
-            <p>📍 Address: {COMPANY_INFO.address}</p>
+            <p> <FaEnvelope className='icon'/> Email: {COMPANY_INFO.email}</p>
+            <p> <FaPhoneAlt className='icon' /> Phone: {COMPANY_INFO.phone}</p>
+            <p> <FaMapMarkerAlt className='icon location-icon'/> Address: {COMPANY_INFO.address}</p>
             {/* <p>🏢 Founded: {COMPANY_INFO.year_founded}</p> */}
           </div>
 
