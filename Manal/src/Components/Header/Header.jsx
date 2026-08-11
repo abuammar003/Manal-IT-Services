@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import "./Header.css";
+import LogoImage from "../../assets/manal_logo_Manalit.svg";
+import ManalLogo from "../../assets/manal_logo.svg";
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
@@ -16,7 +18,14 @@ const Header = () => {
   return (
     <header className="nav">
     <div className='nav_main'>
-        <h1 className='logo'> <RiGraduationCapFill className='hdrLogo'/> Manal <span> IT </span> </h1>
+        {/* Text Logo */}
+        {/* <h1 className='logo'> <RiGraduationCapFill className='hdrLogo'/> Manal <span> IT </span> </h1> */}
+
+        {/* Image Logo */}
+        <div className="logo">
+          <img src={ManalLogo} alt='Manal' className='manal-logo' />
+          <img src={LogoImage} alt='Logo'  className='logo-image' /> 
+        </div>
 
         <nav className={`nav_links ${showNav ? "show" : ""}`} onClick={() => {setShowNav(false)}}> 
             <ul>

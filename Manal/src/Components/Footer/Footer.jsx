@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import LogoImage from "../../assets/manal_logo_Manalit.svg";
+import ManalLogo from "../../assets/manal_logo.svg";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt , FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa';
 import { RiGraduationCapFill } from "react-icons/ri"; 
 import { COMPANY_INFO } from '../../config/constants';
@@ -21,8 +23,18 @@ export default function Footer() {
       <div className="footer-container">
  
         <div className="footer-content">
+          
           <div className="footer-company">
-            <h1 className='logo'> <RiGraduationCapFill className='ftrLogo'/> Manal <span> IT </span> </h1>
+
+            {/* Text Logo */}
+            {/* <h1 className='logo'> <RiGraduationCapFill className='ftrLogo'/> Manal <span> IT </span> </h1> */}
+            
+            {/* Image Logo */}
+            <div className="logo">
+                <img src={ManalLogo} alt='Manal' className='manal-logo' />
+                <img src={LogoImage} alt='Logo'  className='logo-image' /> 
+            </div>
+            
             <p>{COMPANY_INFO.description}</p>
 
             <div className="social-links">
