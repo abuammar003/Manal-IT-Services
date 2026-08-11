@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import { FaPhoneAlt , FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { COMPANY_INFO } from '../../config/constants';
 import "./Contact.css";
 
@@ -55,7 +55,7 @@ export default function Contact() {
                 </div>
 
                 <div className="contact-method">
-                  <FaPhone className="contact-icon" />
+                  <FaPhoneAlt  className="contact-icon" />
                   <div>
                     <h4>Phone</h4>
                     <p>{COMPANY_INFO.phone}</p>
@@ -118,6 +118,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                     placeholder="+91-XXXX-XXXXXX"
                   />
                 </div>

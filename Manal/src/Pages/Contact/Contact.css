@@ -124,10 +124,9 @@
 .contact-method {
   display: flex;
   align-items: flex-start;
+  align-items: center;
   gap: 15px;
-
   padding: 18px;
-
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
@@ -164,7 +163,7 @@
   margin: 0;
 
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1;
   color: #64748b;
 }
 
