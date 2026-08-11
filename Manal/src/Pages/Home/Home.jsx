@@ -35,7 +35,7 @@ export default function Home() {
     
       return () => clearInterval(interval);
     }, []);
-
+ 
 
 
   return (
@@ -123,11 +123,8 @@ export default function Home() {
             <div className="testimonial-viewport">
 
               {/* Slider Track */}
-              <div
-                className="testimonial-track"
-                style={{
-            transform: `translateX(-${currentSlide * 100}%)`
-                }}
+              <div className="testimonial-track"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
               
                 {TESTIMONIALS.map((testimonial) => (
@@ -162,22 +159,6 @@ export default function Home() {
             </button>
 
           </div>
-
-          {/* Dots */}
-          {/* <div className="slider-dots">
-
-            {TESTIMONIALS.map((testimonial, index) => (
-              <button
-                key={testimonial.id}
-                className={`slider-dot ${
-                  currentSlide === index ? 'active' : ''
-                }`}
-                onClick={() => setCurrentSlide(index)}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-
-          </div> */}
 
         </div>
       </section>

@@ -1,11 +1,11 @@
-// import { TbWorld } from "react-icons/tb";
-// import { FaReact, FaNodeJs  } from "react-icons/fa6";
 
 import {
   TbWorld, TbBrandReact, TbBrandNodejs, TbStack2, TbBrandDocker, TbDeviceMobile, TbPalette, TbBrandWordpress, TbBook } from 'react-icons/tb';
 
 import { FaUsers, FaVideo, FaUserTie, FaTools, FaStar, FaBriefcase, FaBookOpen, FaProjectDiagram, FaHandsHelping,
   FaClock, FaChartLine } from "react-icons/fa";
+
+import { FcBusinessman } from "react-icons/fc";
 
 
 
@@ -227,38 +227,74 @@ export const FEATURES = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Ahmed Hassan',
-    role: 'Full Stack Developer at TechCorp',
+    name: 'Noman Shah',
+    role: 'Full Stack Developer ',
     company: 'TechCorp Solutions',
     text: 'Manal IT transformed my career! The instructors were incredibly knowledgeable and the practical approach made learning enjoyable. I got a job within 3 months of completing the course.',
-    avatar: '👨‍💻',
+    avatar: FcBusinessman,
     rating: 5
   },
   {
     id: 2,
-    name: 'Fatima Khan',
+    name: 'Ejaz Deshmukh',
     role: 'Frontend Developer at StartupXYZ',
     company: 'StartupXYZ',
     text: 'The React course was exceptional. The project-based learning approach gave me the confidence to build real applications. Highly recommended for anyone serious about web development.',
-    avatar: '👩‍💼',
+    avatar: FcBusinessman,
     rating: 5
   },
   {
     id: 3,
-    name: 'Ali Raza',
+    name: 'Mustaqeem Shaikh',
     role: 'Data Scientist at DataHub',
     company: 'DataHub Analytics',
     text: 'Great curriculum, supportive community, and excellent mentorship. The instructors are always available to help. Best investment I made for my career.',
-    avatar: '👨‍💼',
+    avatar: FcBusinessman,
     rating: 5
   },
   {
     id: 4,
-    name: 'Zara Ahmed',
+    name: 'Noorul Huda',
     role: 'Mobile Developer at AppStudio',
     company: 'AppStudio',
     text: 'The mobile development course covered everything I needed. The internship program connected me with real clients and helped me build my portfolio.',
-    avatar: '👩‍💻',
+    avatar: FcBusinessman,
+    rating: 5
+  },
+    {
+    id: 5,
+    name: 'Shahrukh Khan',
+    role: 'Full Stack Developer ',
+    company: 'TechCorp Solutions',
+    text: 'Manal IT transformed my career! The instructors were incredibly knowledgeable and the practical approach made learning enjoyable. I got a job within 3 months of completing the course.',
+    avatar: FcBusinessman,
+    rating: 5
+  },
+  {
+    id: 6,
+    name: 'Abu Ammar',
+    role: 'Frontend Developer at StartupXYZ',
+    company: 'StartupXYZ',
+    text: 'The React course was exceptional. The project-based learning approach gave me the confidence to build real applications. Highly recommended for anyone serious about web development.',
+    avatar: FcBusinessman,
+    rating: 5
+  },
+  {
+    id: 7,
+    name: 'Ali Raza',
+    role: 'Data Scientist at DataHub',
+    company: 'DataHub Analytics',
+    text: 'Great curriculum, supportive community, and excellent mentorship. The instructors are always available to help. Best investment I made for my career.',
+    avatar: FcBusinessman,
+    rating: 5
+  },
+  {
+    id: 8,
+    name: 'Fardeen Ahmed',
+    role: 'Mobile Developer at AppStudio',
+    company: 'AppStudio',
+    text: 'The mobile development course covered everything I needed. The internship program connected me with real clients and helped me build my portfolio.',
+    avatar: FcBusinessman,
     rating: 5
   }
 ]
