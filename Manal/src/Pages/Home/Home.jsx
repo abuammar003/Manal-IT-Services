@@ -55,7 +55,7 @@ export default function Home() {
           <div className="services-grid">
             {SERVICES.map((service) => (
               <div key={service.id} className="service-card">
-                <div className="service-icon">{service.icon}</div>
+                <div className="service-icon"> < service.icon /> </div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
                 <ul className="service-features">

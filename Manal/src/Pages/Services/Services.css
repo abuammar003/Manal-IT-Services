@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
 
 /* ==========================================
@@ -168,35 +168,12 @@
    SERVICE ICON
 ========================================== */
 
-/* .services-page .service-icon {
-  width: 65px;
-  height: 65px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 22px;
-
-  border-radius: 16px;
-
-  background: #eff6ff;
-
-  color: #2563eb;
-
-  font-size: 1.8rem;
-
-  transition: all 0.3s ease;
-}
-
 .services-page .service-card-large:hover .service-icon {
-  background: #2563eb;
-
-  color: #ffffff;
-
-  transform: scale(1.05);
-} */
+   background: #2563eb;
+    color: #ffffff !important;
+    border: 3px solid #eff6ff;
+    transform: scale(1.05);
+} 
 
 
 /* ==========================================

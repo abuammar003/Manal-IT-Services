@@ -22,12 +22,12 @@ export default function Services() {
           <div className="services-grid">
             {SERVICES.map((service) => (
               <div key={service.id} className="service-card-large">
-                <div className="service-icon">{service.icon}</div>
+                <div className="service-icon"> <service.icon /> </div>
                 <h3>{service.title}</h3>
                 <p className="service-description">{service.description}</p>
                 
                 <ul className="service-features-list">
-                  {service.features.map((feature, idx) => (
+                  {service.features.map((feature, idx) => ( 
                     <li key={idx}>
                       {/* <FaArrowRight className="feature-icon" /> */}
                        ✓ {feature}
@@ -35,7 +35,10 @@ export default function Services() {
                   ))}
                 </ul>
                 
-                <button className="btn-secondary">Learn More</button>
+                <Link to='/contact' >
+                  <button className="btn-secondary">Contact</button>
+                </Link>  
+
               </div>
             ))}
           </div>

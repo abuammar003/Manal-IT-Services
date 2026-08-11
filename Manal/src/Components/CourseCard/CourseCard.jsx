@@ -5,7 +5,7 @@ export default function CourseCard({ course }) {
   // const Icon = course.icon
   // console.log(course.icon)
 
-  console.log("Hello World")
+  console.log("Hello World") 
   return (
     <div className="course-card">
       <div className="course-icon">  <course.icon /> </div> 

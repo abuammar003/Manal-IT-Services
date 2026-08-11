@@ -148,20 +148,21 @@ section{
 .service-icon,
 .feature-icon,
 .stat-icon{
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size: 2rem;
+    font-weight: 800;
     margin-bottom:20px;
     /* background:linear-gradient(135deg,#2563eb,#3b82f6);
     color:#fff; */
 
     background: #eff6ff;
-    /* color: #2563eb !important; */
-    color: red;
+    color: #2563eb !important;
+    /* color: red; */
     border: 3px solid #2563eb;
     transition: all 0.3s ease;
 
@@ -171,12 +172,12 @@ section{
 
 .course-card:hover  .course-icon, .service-card:hover .service-icon, .feature-card:hover .feature-icon {
     background: #2563eb;
-    color: #ffffff;
+    color: #ffffff !important;
     border: 3px solid #eff6ff;
     transform: scale(1.05);
 }
 
-
+ 
 
 
 

@@ -6,12 +6,12 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Courses from './pages/Courses/Courses';
 import Contact from "./pages/Contact/Contact";
-import Footer from './components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
-
-
+ 
+   
   return (
     <>  
 

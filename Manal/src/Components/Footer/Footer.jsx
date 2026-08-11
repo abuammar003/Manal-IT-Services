@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { RiGraduationCapFill } from "react-icons/ri"; 
 import { COMPANY_INFO } from '../../config/constants';
 import "./Footer.css";
 
@@ -14,7 +15,7 @@ export default function Footer() {
     // { icon: FaTwitter, url: 'https://twitter.com' },
     // { icon: FaYoutube, url: 'https://youtube.com' }
   ]
-
+ 
   return (
     <footer className="footer">
 
@@ -22,7 +23,7 @@ export default function Footer() {
 
         <div className="footer-content">
           <div className="footer-company">
-            <h3>{COMPANY_INFO.name}</h3>
+            <h1 className='logo'> <RiGraduationCapFill className='ftrLogo'/> Manal <span> IT </span> </h1>
             <p>{COMPANY_INFO.description}</p>
 
             <div className="social-links">
