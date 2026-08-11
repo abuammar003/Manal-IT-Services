@@ -10,7 +10,7 @@ const Header = () => {
 
     function toggleMenu() { 
       setShowNav((prev) => !prev);
-      return;
+      return; 
     }
 
   return (
