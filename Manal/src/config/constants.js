@@ -1,5 +1,12 @@
-import { TbWorld } from "react-icons/tb";
-import { FaReact } from "react-icons/fa6";
+// import { TbWorld } from "react-icons/tb";
+// import { FaReact, FaNodeJs  } from "react-icons/fa6";
+
+import {
+  TbWorld, TbBrandReact, TbBrandNodejs, TbStack2, TbBrandDocker, TbDeviceMobile, TbPalette, TbBrandWordpress, TbBook } from 'react-icons/tb';
+
+import { FaUsers, FaVideo, FaUserTie, FaTools, FaStar, FaBriefcase, FaBookOpen, FaProjectDiagram, FaHandsHelping,
+  FaClock, FaChartLine } from "react-icons/fa";
+
 
 
 
@@ -22,102 +29,113 @@ export const COURSES = [
     id: 1,
     title: 'Web Development Fundamentals',
     category: 'Web Development',
-    description: 'Learn HTML, CSS, JavaScript, and modern web development practices',
+    description: 'Build responsive websites using HTML, CSS, JavaScript and modern web development techniques.',
     level: 'Beginner',
     duration: '8 weeks',
     price: '9,999',
     // icon: '🌐',
     icon: TbWorld,
-    highlights: ['HTML', 'CSS (Cascading Stylesheet)', 'BootStrap', 'JavaScript ES6', 'React.js', 'Responsive Design', 'Project Based Learning']
+    highlights: ['HTML', 'CSS3 (Cascading Stylesheet)', 'BootStrap', 'JavaScript ES6+', 'React.js', 'Responsive Design', 'Git & GitHub' ,'Project Based Learning']
   },
   {
     id: 2,
     title: 'React.js Mastery',
     category: 'Frontend',
-    description: 'Master React with hooks, state management, and modern patterns',
+    description: 'Master React.js and build modern interactive applications using components, hooks and APIs.',
     level: 'Intermediate',
     duration: '10 weeks',
     price: '14,999',
     // icon: '⚛️',
-    icon: FaReact,
-    highlights: ['Hooks & Context', 'Component Patterns', 'Performance Optimization', 'Real Projects']
+    icon: TbBrandReact,
+    highlights: ['Component Patterns', 'Hooks & Context', 'Context API', 'React Router', 'Performance Optimization', 'Git & GitHub', 'REST APIs','Real Projects', 'Deployment']
   },
   {
     id: 3,
     title: 'Node.js & Express.js',
     category: 'Backend',
-    description: 'Build scalable server-side applications with Node.js and Express',
+    description: 'Learn backend development by building APIs, authentication systems and scalable server applications.',
     level: 'Intermediate',
     duration: '10 weeks',
     price: '14,999',
-    icon: '🟢',
-    highlights: ['RESTful APIs', 'Database Integration', 'Authentication', 'Deployment']
+    // icon: '🟢',
+    icon: TbBrandNodejs,
+    highlights: ['Node.js', 'Express.js', 'REST APIs', 'Authentication', 'Middleware', 'Database Integration',
+      'API Projects', 'Deployment']
   },
   {
     id: 4,
     title: 'Full Stack Development',
     category: 'Full Stack',
-    description: 'Complete course covering frontend, backend, and database technologies',
+    description: 'Build complete web applications by combining frontend, backend, databases and deployment skills.',
     level: 'Advanced',
     duration: '16 weeks',
     price: '24,999',
-    icon: '🚀',
-    highlights: ['MERN Stack', 'Database Design', 'DevOps Basics', 'Capstone Project']
+    // icon: '🚀',
+    icon: TbStack2,
+    highlights: [  'MERN Stack', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Full Stack Project']
   },
   {
     id: 5,
     title: 'Dimploma in DevOps Basics',
     category: 'DevOps',
-    description: 'DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity. ',
+    description: 'Learn DevOps tools and practices for automation, deployment, CI/CD and modern application delivery. ',
     level: 'Beginner',
     duration: '12 weeks',
     price: '16,999',
-    icon: '🐍',
-    highlights: ['Pandas & NumPy', 'Data Visualization', 'ML Basics', 'Real Datasets']
+    // icon: '🐍',
+    icon: TbBrandDocker,
+    highlights: [ 'Linux Basics', 'Git & GitHub', 'Docker', 'CI/CD', 'Jenkins', 'Cloud Basics', 'Deployment']
   },
   {
     id: 6,
     title: 'Mobile App Development',
     category: 'Mobile',
-    description: 'Build native and cross-platform mobile applications',
+    description: 'Learn to create modern cross-platform mobile applications with practical development projects.',
     level: 'Intermediate',
     duration: '14 weeks',
     price: '19,999',
-    icon: '📱',
-    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+    // icon: '📱',
+    icon: TbDeviceMobile,
+    highlights: [ 'React Native', 'Mobile UI', 'Navigation', 'API Integration', 'State Management', 'Testing',
+      'App Deployment']
   },
   {
     id: 7,
     title: 'Diploma in Graphic & Animation Designing',
     category: 'Graphic & Animation',
-    description: 'Graphic designers explain a concept through visuals, and motion graphics designers',
+    description: 'Develop creative skills in graphic design, animation, visual communication and digital media.',
     level: 'Intermediate',
     duration: '14 weeks',
     price: '19,999',
-    icon: '📱',
-    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+    // icon: '📱',
+    icon: TbPalette,
+    highlights: ['Graphic Design', 'Typography', 'Branding', 'UI Visuals', 'Motion Graphics', 'Animation',
+      'Creative Projects']
   },
   {
     id: 8,
     title: 'Wordpress & Drupal Certification',
     category: 'Web Development',
-    description: 'Content Management System generally refers to an web-based application that enables multiple users with different.',
+    description: 'Learn to create, manage and customize professional websites using popular CMS platforms.',
     level: 'Intermediate',
     duration: '14 weeks',
     price: '19,999',
-    icon: '📱',
-    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+    // icon: '📱',
+    icon:   TbBrandWordpress,
+    highlights: ['WordPress', 'Drupal','Themes', 'Plugins', 'CMS Management', 'Website Customization',
+      'Live Projects']
   },
   {
     id: 9,
     title: 'Courses Available on Demand',
     category: 'Others',
-    description: 'Graphic designers explain a concept through visuals, and motion graphics designers',
+    description: 'Learn specialized technology and creative skills through courses tailored to your learning goals.',
     level: 'Intermediate',
     duration: '14 weeks',
     price: '19,999',
-    icon: '📱',
-    highlights: ['React Native', 'Mobile UI/UX', 'APIs Integration', 'Publishing Apps']
+    // icon: '📱',
+    icon: TbBook,
+    highlights: [  'Flexible Topics', 'Custom Learning', 'Expert Guidance', 'Practical Training', 'Flexible Schedule', 'Project Support', 'Career Guidance']
   },
 
 ]
@@ -127,42 +145,42 @@ export const SERVICES = [
     id: 1,
     title: 'Live Training',
     description: 'Interactive live classes with experienced instructors and hands-on projects',
-    icon: '👥',
+    icon: FaUsers,
     features: ['Interactive Sessions', 'Real-time Q&A', 'Peer Learning', 'Certificate']
   },
   {
     id: 2,
     title: 'Self-Paced Learning',
     description: 'Access to recorded video lectures and resources available 24/7',
-    icon: '🎥',
+    icon: FaVideo,
     features: ['Video Lectures', 'Downloadable Resources', 'Lifetime Access', 'Self Schedule']
   },
   {
     id: 3,
     title: 'Mentorship Program',
     description: 'One-on-one guidance from industry professionals and senior developers',
-    icon: '👨‍🏫',
+    icon: FaUserTie,
     features: ['Career Guidance', 'Portfolio Building', 'Interview Prep', 'Industry Insights']
   },
   {
     id: 4,
     title: 'Project-Based Learning',
     description: 'Build real-world projects that demonstrate your skills to employers',
-    icon: '🛠️',
+    icon: FaTools,
     features: ['Real Projects', 'GitHub Portfolio', 'Code Reviews', 'Industry Standards']
   },
   {
     id: 5,
     title: 'Internship Program',
     description: 'Gain practical experience through our partner network of tech companies',
-    icon: '🌟',
+    icon: FaStar,
     features: ['Paid Internships', 'Industry Exposure', 'Networking', 'Job Placement']
   },
   {
     id: 6,
     title: 'Job Placement Support',
     description: 'Resume building, interview coaching, and placement assistance',
-    icon: '💼',
+    icon: FaBriefcase,
     features: ['Resume Workshop', 'Mock Interviews', 'Job Board Access', 'Company Connections']
   }
 ]
@@ -171,32 +189,38 @@ export const FEATURES = [
   {
     title: 'Expert Instructors',
     description: '100+ experienced professionals from top companies',
-    icon: '👨‍💼'
+    // icon: '👨‍💼'
+    icon: FaUserTie
   },
   {
     title: 'Industry-Relevant Curriculum',
     description: 'Updated courses based on current industry demands',
-    icon: '📚'
+    // icon: '📚'
+    icon: FaBookOpen
   },
   {
     title: 'Hands-On Projects',
     description: 'Build real applications and strengthen your portfolio',
-    icon: '⚙️'
+    // icon: '⚙️'
+    icon: FaProjectDiagram
   },
   {
     title: 'Lifetime Support',
     description: 'Access to resources and community even after course completion',
-    icon: '🤝'
+    // icon: '🤝'
+    icon: FaHandsHelping
   },
   {
     title: 'Flexible Learning',
     description: 'Learn at your own pace with live and recorded options',
-    icon: '⏱️'
+    // icon: '⏱️'
+    icon: FaClock
   },
   {
     title: 'Career Growth',
     description: 'From training to job placement and career advancement',
-    icon: '📈'
+    // icon: '📈'
+    icon: FaChartLine
   }
 ]
 
