@@ -119,7 +119,7 @@ section{
 .service-card,
 .feature-card,
 .stat-card,
-.testimonial-card,
+/* .testimonial-card, */
 .faq-col{
     background:#ffffff;
     border-radius:18px;
@@ -133,7 +133,7 @@ section{
 .service-card:hover,
 .feature-card:hover,
 .stat-card:hover,
-.testimonial-card:hover,
+/* .testimonial-card:hover, */
 .faq-col:hover{
     transform:translateY(-8px);
     box-shadow:0 20px 40px rgba(15,23,42,.12);
@@ -178,6 +178,12 @@ section{
 }
 
  
+/* ==========================================
+   Testimonial Section
+========================================== */
+/* .testinomial-main {
+    height: 70vh;
+} */
 
 
 
@@ -318,8 +324,8 @@ p{
 
      .courses-grid,
     .services-grid,
-    .features-grid,
-    .testimonials-grid {
+    /* .testimonials-grid */
+    .features-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -356,7 +362,7 @@ section{
 .service-card,
 .feature-card,
 .stat-card,
-.testimonial-card,
+/* .testimonial-card, */
 .faq-col{
 
     padding:22px;
@@ -367,7 +373,7 @@ section{
     .services-grid,
     .features-grid,
     .stats-grid,
-    .testimonials-grid,
+    /* .testimonials-grid, */
     .faq-grid {
         grid-template-columns: 1fr;
     }

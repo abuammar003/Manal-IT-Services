@@ -268,16 +268,202 @@
 
 .home .testimonials-section {
   padding: 100px 0;
-
   background: #f8fafc;
 }
 
-.home .testimonials-grid {
-  display: grid;
+/* Slider Container */
 
-  grid-template-columns: repeat(3, 1fr);
+.home .testimonials-slider {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
 
-  gap: 25px;
+/* Viewport */
+
+.home .testimonial-viewport {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Track */
+
+.home .testimonial-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Individual Slide */
+
+.home .testimonial-slide {
+  min-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+  padding: 10px;
+}
+
+/* Testimonial Card */
+
+.home .testimonial-card {
+  width: 100%;
+  min-height: 300px;
+
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+
+  transition: 0.3s ease;
+}
+
+
+/* Header */
+.home .testimonial-header {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+/* Avatar */
+.home .avatar {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 1.8rem;
+
+  border: 2px solid #bfdbfe;
+}
+
+/* Info */
+
+.home .testimonial-info h4 {
+  margin: 0 0 3px;
+
+  color: #0f172a;
+
+  font-size: 1.1rem;
+}
+
+.home .testimonial-info .role {
+  margin: 0;
+
+  color: #2563eb;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.home .testimonial-info .company {
+  margin: 2px 0 0;
+
+  color: #64748b;
+
+  font-size: 0.85rem;
+}
+
+/* Rating */
+
+.home .testimonial-rating {
+  margin-bottom: 15px;
+
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+/* Testimonial Text */
+
+.home .testimonial-text {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+
+  font-style: italic;
+}
+
+
+/* ====================== Slider Buttons  ======================= */
+.home .slider-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.home .slider-btn:hover {
+  background: #1d4ed8;
+
+  transform:
+    translateY(-50%)
+    scale(1.08);
+}
+
+/* Previous */
+
+.home .slider-prev {
+  left: -22px;
+}
+
+/* Next */
+
+.home .slider-next {
+  right: -22px;
 }
 
 

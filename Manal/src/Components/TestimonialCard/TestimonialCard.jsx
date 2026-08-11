@@ -1,8 +1,9 @@
 export default function TestimonialCard({ testimonial }) {
   
-  const stars = Array(testimonial.rating).fill('⭐').join('')
+  // const stars = Array(testimonial.rating).fill('⭐').join('') 
   
   return (
+
     <div className="testimonial-card">
  
       <div className="testimonial-header">
@@ -14,8 +15,9 @@ export default function TestimonialCard({ testimonial }) {
         </div>
       </div>
       
-      <div className="stars">{stars}</div>
+      {/* <div className="stars">{stars}</div> */}
       <p className="testimonial-text">"{testimonial.text}"</p>
     </div>
+
   )
 }

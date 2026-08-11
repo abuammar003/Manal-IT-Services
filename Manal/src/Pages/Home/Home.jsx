@@ -1,14 +1,43 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { COURSES, SERVICES, FEATURES, TESTIMONIALS, COMPANY_INFO} from '../../config/constants'
-import CourseCard from '../../components/CourseCard/CourseCard'
-import TestimonialCard from '../../components/TestimonialCard/TestimonialCard'
+import CourseCard from '../../Components/CourseCard/CourseCard'
+import TestimonialCard from '../../Components/TestimonialCard/TestimonialCard'
 // import StatsSection from '../../components/StatesSection/StatsSection'
-import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'
+import FeaturesSection from '../../Components/FeaturesSection/FeaturesSection'
 import Hero from '../../Components/Hero/Hero';
 import "./Home.css";
 
 
 export default function Home() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const NextSlide = () => {
+      setCurrentSlide((prev) =>
+        prev === TESTIMONIALS.length - 1 ? 0 : prev + 1
+      );
+    };
+
+    const PrevSlide = () => {
+      setCurrentSlide((prev) =>
+        prev === 0 ? TESTIMONIALS.length - 1 : prev - 1
+      );
+    };
+
+
+    // For Auto Slide
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) =>
+          prev === TESTIMONIALS.length - 1 ? 0 : prev + 1
+        );
+      }, 6000);
+    
+      return () => clearInterval(interval);
+    }, []);
+
+
+
   return (
     <main className="home">
       {/* Hero Section */}
@@ -76,18 +105,80 @@ export default function Home() {
 
       
 
-      {/* Review Section */}
+      {/* Testimonials Section  (Review Section) */}
+
       <section className="testimonials-section">
         <div className="container">
+
           <div className="section-header">
             <h2>Success Stories from Our Students</h2>
-            <p>Hear from students who transformed their careers with Manal IT</p>
+            <p>
+              Hear from students who transformed their careers with Manal IT
+            </p>
           </div>
-          <div className="testimonials-grid">
-            {TESTIMONIALS.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+
+          <div className="testimonials-slider">
+
+            {/* Slider Viewport */}
+            <div className="testimonial-viewport">
+
+              {/* Slider Track */}
+              <div
+                className="testimonial-track"
+                style={{
+            transform: `translateX(-${currentSlide * 100}%)`
+                }}
+              >
+              
+                {TESTIMONIALS.map((testimonial) => (
+                  <div
+                    className="testimonial-slide"
+                    key={testimonial.id}
+                  >
+                    <TestimonialCard testimonial={testimonial} />
+                  </div>
+                ))}
+
+              </div>
+              
+            </div>
+              
+            {/* Previous Button */}
+            <button
+              className="slider-btn slider-prev"
+              onClick={PrevSlide}
+              aria-label="Previous testimonial"
+            >
+              ❮
+            </button>
+
+            {/* Next Button */}
+            <button
+              className="slider-btn slider-next"
+              onClick={NextSlide}
+              aria-label="Next testimonial"
+            >
+              ❯
+            </button>
+
+          </div>
+
+          {/* Dots */}
+          {/* <div className="slider-dots">
+
+            {TESTIMONIALS.map((testimonial, index) => (
+              <button
+                key={testimonial.id}
+                className={`slider-dot ${
+                  currentSlide === index ? 'active' : ''
+                }`}
+                onClick={() => setCurrentSlide(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
             ))}
-          </div>
+
+          </div> */}
+
         </div>
       </section>
 
