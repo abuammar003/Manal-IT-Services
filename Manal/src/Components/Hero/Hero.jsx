@@ -7,7 +7,7 @@ import { IoIosStarOutline } from "react-icons/io";
 function Hero() {
   return (
     <div className="hero">
-
+ 
 
         <div className='hero_text'>
             <span className="tag"> <IoIosStarOutline /> Learn, Build, Grow</span>

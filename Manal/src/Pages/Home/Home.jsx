@@ -4,7 +4,7 @@ import CourseCard from '../../components/CourseCard/CourseCard'
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard'
 // import StatsSection from '../../components/StatesSection/StatsSection'
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'
-import Hero from '../../components/Hero/Hero';
+import Hero from '../../Components/Hero/Hero';
 import "./Home.css";
 
 
