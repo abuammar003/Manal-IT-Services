@@ -305,7 +305,7 @@ export const STATS = [
     label: 'Students Trained',
     icon: '👥'
   },
-  {
+  { 
     number: '10+',
     label: 'Courses Offered',
     icon: '📚'

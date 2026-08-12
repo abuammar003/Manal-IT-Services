@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export default function CourseCard({ course }) {
   // console.log(course.icon)
 
-  return (
+  return ( 
     <div className="course-card">
       <div className="course-icon">  <course.icon /> </div> 
       <h3>{course.title}</h3>
