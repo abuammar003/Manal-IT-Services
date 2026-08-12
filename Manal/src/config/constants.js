@@ -301,12 +301,12 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   {
-    number: '5000+',
+    number: '500+',
     label: 'Students Trained',
     icon: '👥'
   },
   {
-    number: '50+',
+    number: '10+',
     label: 'Courses Offered',
     icon: '📚'
   },
