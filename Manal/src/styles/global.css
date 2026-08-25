@@ -11,7 +11,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing:border-box; 
 }
 
 html{
@@ -63,7 +63,7 @@ select{
 ========================================== */
 
 section{
-    padding:90px 0;
+    padding: 70px 0;
 }
 
 
@@ -338,7 +338,7 @@ p{
 }
 
 section{
-    padding:70px 0;
+    padding:50px 0;
 }
 
 }
@@ -384,7 +384,7 @@ section{
 @media(max-width:576px){
 
 section{
-    padding:60px 0;
+    padding: 40px 0;
 }
 
 .section-header h2{
